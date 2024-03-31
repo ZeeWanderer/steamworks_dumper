@@ -21,3 +21,6 @@ _deps
 build/
 build_debug/
 
+# ignore Visual Studio
+.vs/
+
