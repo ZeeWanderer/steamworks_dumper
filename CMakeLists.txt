@@ -12,6 +12,7 @@ add_subdirectory(external)
 
 add_executable(steamworks_dumper
     src/main.cpp
+    src/linux
     src/moduleimage.h
     src/moduleimage.cpp
     src/clientmodule.h
@@ -27,8 +28,7 @@ add_executable(steamworks_dumper
     src/callbackdumper.h
     src/callbackdumper.cpp
     src/emsgdumper.h
-    src/emsgdumper.cpp
-)
+    src/emsgdumper.cpp)
 
 target_include_directories(steamworks_dumper PUBLIC ${CAPSTONE_INCLUDE_DIRS})
-target_link_libraries(steamworks_dumper ${CAPSTONE_LIBRARIES} argparse)
+target_link_libraries(steamworks_dumper PRIVATE capstone::capstone argparse)

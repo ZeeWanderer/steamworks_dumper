@@ -3,7 +3,8 @@
 
 #include <string>
 #include <string_view>
-#include <elf.h>
+#include "linux/elf.h"
+#include "linux/stuff.h"
 #include <fstream>
 
 class ModuleImage
