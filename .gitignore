@@ -24,3 +24,7 @@ build_debug/
 # ignore Visual Studio
 .vs/
 
+# ignore dump and steam bins
+.steam*/
+.dump/
+
