@@ -21,8 +21,9 @@ _deps
 build/
 build_debug/
 
-# ignore Visual Studio
+# ignore Visual Studio and vcpkg intermediate dirs
 .vs/
+vcpkg_installed/
 
 # ignore dump and steam bins
 .steam*/
