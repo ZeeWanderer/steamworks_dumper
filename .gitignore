@@ -25,7 +25,6 @@ build_debug/
 .vs/
 vcpkg_installed/
 
-# ignore dump and steam bins
+# ignore steam bins
 .steam*/
-.dump/
 
