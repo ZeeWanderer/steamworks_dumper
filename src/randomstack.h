@@ -2,7 +2,7 @@
 #define RANDOMSTACK_H
 
 #include <map>
-#include <capstone.h>
+#include <capstone/capstone.h>
 
 // inaccurate function local stack tracker
 // only somewhat suitable for approximating local stack state
